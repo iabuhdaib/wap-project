@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping</title>
+  <link href="./CSS/WelcomeStyle.css" type="text/css" rel="stylesheet" />
+ 
+</head>
+
+<body style="min-width: 301px; min-height: 108px">
+  <nav>
+    <img id="logo" src="./images/logo.png" alt="MyLogo"   width="40" height="40px" 
+       />
+    <p  style="margin: 0">Welcome, <span id="welcomebaner"></span></p>
+    <button id="logout">Logout</button>
+  </nav>
+  <hr />
+  
+    <p>List Of Products:</p>
+    <table id="my_prodcut_table_id">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Image</th>
+        <th>Stock</th>
+        <th>Action</th>
+      </tr>
+      <tr id="my_prodcut_id">
+       
+      </tr>
+    </table>
+
+    <p style="margin-top: 100px" id="shoping_cart">Your Shopping Cart:</p>
+    <table id="shoping_cart_table">
+      <tr id="cart_first_row">
+        <th>Name</th>
+        <th>Price</th>
+        <th>Total</th>
+        <th>Quantity</th>
+      </tr>
+      
+    
+      <tr>
+        <td colspan="4" style="padding-right: 5%; text-align: end">
+          Total: 85
+        </td>
+      </tr>
+    </table>
+    <div hidden>There is no item in youre shopping cart !</div>
+
+    <button id="btn" onclick="submitOrder();">Place Order</button>
+ 
+</body>
+
+<script src="./scriptWelcome.js"></script>
+
+</html>
